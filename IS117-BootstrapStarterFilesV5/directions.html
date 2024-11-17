@@ -1,10 +1,113 @@
+<!--DEVELOPER: Anika Valluru IS117-003, Fall Semester, 2024 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Project</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+
 </head>
 <body>
-$END$
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-expand-md justify-content-start navbar-custom navbar-dark col-12">
+
+
+    <!-- Brand -->
+      <!-- Brand -->
+      <figure>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/cookie_logo.png" alt="Cookie Logo"
+               width="100px" height="90px" />
+        </a>
+      </figure>
+
+      <!-- Responsive Button for the smaller menu -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <!-- Links -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbardrop"
+               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Project
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="ingredients.html">Ingredients</a>
+              <a class="dropdown-item" href="directions.html">Directions</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Directions -->
+
+    <!--<div class="container mt-5">-->
+
+      <div class="container" style="display: flex; align-items: flex-start; gap: 20px;">
+        <div class="card" style=" width: 100rem;">
+          <h2 style="margin-top: 20px;">Baking Directions</h2>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Preheat the oven to 350°F. Line the bottom of an 8x8 baking dish with parchment paper.</li>
+        <li class="list-group-item">Make the brown butter: In a small pan set over medium heat, melt the butter and cook until it turns brown and smells nutty, about 5 minutes. Try not to walk away from the butter, as it can go from brown to burned very quickly. Pour the brown butter into a large mixing bowl and let it cool slightly.</li>
+        <li class="list-group-item">Whisk together the flour, baking powder, and salt to combine.</li>
+        <li class="list-group-item">Add both sugars to the brown butter, and mix on medium speed with a hand mixer until well combined, about 2 minutes. Add the eggs and beat for another 2 minutes, until the mixture has lightened in color. Add the vanilla, and beat for 30 seconds.</li>
+        <li class="list-group-item">With the mixer on low, slowly add the flour mixture, and stop mixing right before the flour disappears.</li>
+        <li class="list-group-item">Add the chopped walnuts, then finish stirring by hand with a spatula, just until the flour is fully mixed in.</li>
+        <li class="list-group-item">Pour the mixture into the prepared pan and bake for about 35-40 minutes, until a toothpick inserted into the center comes out clean. Cool on a wire rack, and cut into squares. Enjoy!</li>
+      </ol>
+
+      <!-- Additional notes-->
+      <h3>Notes</h3>
+      <ul class="list-group">
+        <li class="list-group-item">Though the blondies can technically be eaten right away out of the oven, they taste better and cut more cleanly after they've cooled for a few hours.</li>
+        <li class="list-group-item">Storage: Keep at room temperature for 3 days. They will technically last longer than this but the flavor starts to deteriorate and they dry out. If you want to keep them longer than a few days, I recommend freezing.</li>
+        <li class="list-group-item">Freezing: Store in an airtight container for up to 2 months.</li>
+      </ul>
+    </div>
+        </div>
+
+
+      <div class="container">
+      <div class="row">
+
+        </row>
+      </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+      <div class="container">
+        <div class="row">
+          <span>&copy; 2024, Anika Valluru, IS117003 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Javascript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous">
+  </script>
+
 </body>
 </html>

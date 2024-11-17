@@ -1,8 +1,9 @@
+<!--DEVELOPER: Anika Valluru IS117-003, Fall Semester, 2024 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
+    <title>Project</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -14,13 +15,18 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-            <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
+        <nav class="navbar navbar-expand-md justify-content-start navbar-custom navbar-dark col-12">
+
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">Logo</a>
+                <!-- Brand -->
+                <figure>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/cookie_logo.png" alt="Cookie Logo"
+                             width="100px" height="90px" />
+                    </a>
+                </figure>
+
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -30,64 +36,112 @@
                     <ul class="navbar-nav">
                         <!-- Links -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
 
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
                                data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Education
+                                Project
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
+                                <a class="dropdown-item" href="ingredients.html">Ingredients</a>
+                                <a class="dropdown-item" href="directions.html">Directions</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        <div class="container">
-          <div class="row">
-            <form action="">
-                <div class="form-group">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" class="form-control" id="firstname"
-                           placeholder="First name" name="firstname">
+
+        <h1 class="mt-4">Contact</h1>
+
+        <div class="container-fluid pb-5">
+        <div class="row justify-content-left">
+                <!-- Contact form -->
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4>Contact Us!</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="form-group mb-3">
+                                    <label for="firstname">First Name:</label>
+                                    <input type="text" class="form-control" id="firstname"
+                                           placeholder="First name" name="firstname">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="lastname">Last Name:</label>
+                                    <input type="text" class="form-control" id="lastname"
+                                           placeholder="Last name" name="lastname">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email"
+                                           placeholder="Enter email" name="email">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Enter message" rows="5"></textarea>
+                                </div>
+
+                                <div class="form-group form-check mb-3">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input"
+                                               type="checkbox" name="subscribe"> Subscribe
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" class="form-control" id="lastname"
-                           placeholder="Last name" name="lastname">
+
+                <!-- Details card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4>Details</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                We want to hear from you! Please fill out the indicated fields and a member of our team
+                                will get back to you shortly! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                luctus, erat sit amet eleifend ultrices, justo mauris faucibus odio, non ullamcorper orci
+                                justo at velit. Phasellus vel leo eleifend, convallis ligula vel, rutrum justo. Nunc sit
+                                amet justo magna.
+                            </p>
+                            <p>
+                                <br>
+                                Located: 141 Summit St, Newark, NJ 07103
+                                <br>
+                                <br>
+                                Email: arv33@njit.edu
+                                <br>
+                                <br>
+                                Phone: 123-456-7891
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email"
-                           placeholder="Enter email" name="email">
-                </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input"
-                               type="checkbox" name="subscribe"> Subscribe
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </row>
-</div>
+            </div>
         </div>
- <footer class="footer page-footer font-small ">
+
+        <footer class="footer page-footer font-small ">
      <div class="container">
         <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+            <span>&copy; 2024, Anika Valluru, IS117003 |  Terms Of Use  |  Privacy Statement</span>
         </div>
      </div>
   </footer>

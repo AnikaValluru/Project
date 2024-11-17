@@ -1,8 +1,9 @@
+<!--DEVELOPER: Anika Valluru IS117-003, Fall Semester, 2024 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
+    <title>Project</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -14,13 +15,17 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-            <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
+        <nav class="navbar navbar-expand-md justify-content-start navbar-custom navbar-dark col-12">
 
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">Logo</a>
+        <!-- Brand -->
+                    <figure>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/cookie_logo.png" alt="Cookie Logo"
+                                 width="100px" height="90px" />
+                        </a>
+                    </figure>
+
+                </figure>
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -30,32 +35,31 @@
                     <ul class="navbar-nav">
                         <!-- Links -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
 
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
                                data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Education
+                                Project
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
+                                <a class="dropdown-item" href="ingredients.html">Ingredients</a>
+                                <a class="dropdown-item" href="directions.html">Directions</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        <div class="row">
+
+       <!-- <div class="row">
         <p class="col-1">Col 1</p>
         <p class="col-1">Col 2</p>
         <p class="col-1">Col 3</p>
@@ -68,16 +72,61 @@
         <p class="col-1">Col 10</p>
         <p class="col-1">Col 11</p>
         <p class="col-1">Col 12</p>
+        </div> -->
+
+
+
+        <h1 style="margin-top: 20px;">Home</h1>
+
+        <!-- Jumbotron -->
+        <div class="mt-4 p-5 bg-primary text-white rounded" style="
+    background-image: url('images/blondies2.jpg');
+    height: 350px;">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-center text-white">
+                        <h1 class="mb-3">Brown Butter Blondies</h1>
+                        <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="ingredients.html" role="button">Get Recipe</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    <div class="col-sm-4  text-center">
-        <h2>h2 Bootstrap heading (24px)</h2>
-        <h3>h2 Bootstrap heading (18px)</h3>
+
+
+
+        <!-- Jumbotron
+
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Brown Butter blondies</h1>
+            <img src="blondies.jpg" alt="Blondies Image" class="img-fluid rounded mb-4" style="width:100%; height:auto;">
+            <p>Lorem ipsum...</p>
+        </div>-->
+
+        <div class="scrollable-section">
+        <div class="col-sm-13 text-center">
+        <br>
+        <h4>What are they? </h4>
+        <p> Brown butter blondies are a dessert bar similar to the texture of a brownie. The key difference is that they
+            contain brown sugar, vanilla, and melted butter, while brownies use cocoa powder and chocolate. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed ultricies vehicula magna, eu porttitor quam cursus ac. Ut tortor erat, varius a aliquet in,
+            laoreet volutpat tortor.
+        </p>
+            </div>
     </div>
+
+        <!--<div class="col-sm-13 text-center">-->
+            <div class="container-fluid pb-5 text-center">
+            <h4>Recipe from: </h4>
+            <a href=https://www.fifteenspatulas.com/featured-friday-brown-butter-toffee-blondies/">
+                //www.fifteenspatulas.com/featured-friday-brown-butter-toffee-blondies/</a>
+        </div>
+
 </div>
+
  <footer class="footer page-footer font-small ">
      <div class="container">
         <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+            <span>&copy; 2024, Anika Valluru, IS117003 |  Terms Of Use  |  Privacy Statement</span>
         </div>
      </div>
   </footer>
